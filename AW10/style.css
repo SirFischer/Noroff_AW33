@@ -1,0 +1,408 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #ebd8c7;
+}
+
+
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+ 
+  ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+	background: rgb(41, 41, 41);
+	border-radius: 10px;
+  }
+
+header {
+	width: 100%;
+	height: 240px;
+	background-image: url("assets/blue-cloudy-sky-texture-background-vector.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position-y: bottom;
+}
+
+#title_logo {
+	margin-right: auto;
+	margin-left: auto;
+	width: fit-content;
+}
+
+#title_logo img {
+	display: inline-block;
+	height: 100px;
+	transform: rotate(35deg);
+	margin-right: 10px;
+}
+
+@font-face
+{
+	font-family: title_font;
+	src: url(assets/Pacifico-Regular.ttf);
+}
+
+@font-face
+{
+	font-family: show_case;
+	src: url(assets/BalooBhai-Regular.ttf);
+}
+
+@font-face
+{
+	font-family: howto;
+	src: url(assets/Righteous-Regular.ttf);
+}
+
+#title_logo h1 {
+	color: rgb(255, 255, 255);
+	font-family: title_font;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	display: inline-block;
+	font-size: 80px;
+}
+
+nav {
+	background-color: rgb(226, 144, 77);
+	width: 100%;
+	height: 50px;
+	border-bottom: 4px rgb(161, 95, 41) solid;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	font-family: howto;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	margin: 0 25px;
+}
+
+nav a:hover {
+	border-bottom: 2px rgb(255, 255, 255) solid;
+}
+
+nav a i {
+	margin-right: 3px;
+}
+
+#homepage_main_container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 50px 0;
+}
+
+.homepage_showcase {
+	width: calc(95% / 3);
+	height: 800px;
+	margin: 0 10px;
+	text-align: center;
+	border-radius: 3px;
+	border: 1px solid rgb(182, 98, 42);
+}
+
+.homepage_showcase h2 {
+	color: white;
+	/*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+	text-shadow: 0 5px 10px black;
+	font-family: show_case;
+	font-size: 50px;
+}
+
+#homepage_newarrivals {
+	background-image: url(assets/ice-3611698_1920.jpg);
+	background-size: cover;
+	transition: all 1s;
+	background-position: 30% 0;
+	cursor: pointer;
+}
+
+#homepage_newarrivals:hover{
+	background-position: 70% 0;
+}
+
+#homepage_howto {
+	background-image: url(assets/ice-1786311_1920.jpg);
+	background-size: 190% 100%;
+}
+
+#homepage_howto p{
+	width: 80%;
+	text-align: left;
+	margin: 0 auto;
+	font-size: 35px;
+	margin-bottom: 100px;
+	font-family: howto;
+	color: white;
+	text-shadow: 0 2px 3px black;
+}
+
+#homepage_favorites {
+	background-image: url(assets/waffle-4608843_1920.jpg);
+	background-size: cover;
+	transition: all 1s;
+	cursor: pointer;
+	background-position: 80% 0;
+}
+
+#homepage_favorites:hover{
+	background-position: 40% 0;
+}
+
+#homepage_item_preview {
+	width: 100%;
+	height: auto;
+	margin: 50px 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.homepage_item_preview_item {
+	border: 5px solid rgb(226, 144, 77);
+	background-color: rgb(226, 144, 77);
+	width: calc(100% / 7);
+	height: 250px;
+	margin: 5px 20px;
+	border-radius: 5px;
+}
+
+.homepage_item_preview_item:hover {
+	border: 5px solid orange;
+}
+
+.homepage_item_preview_item img {
+	height: 55%;
+	display: block;
+	margin: 10px auto;
+	margin-bottom: -20px;
+}
+
+.homepage_item_preview_item div {
+	background-color: rgb(69, 209, 252);
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: -30px;
+	border-radius: 10px;
+	width: 100px;
+	height: 50px;
+	color: white;
+	font-family: show_case;
+	font-size: 33px;
+	cursor: pointer;
+}
+
+.homepage_item_preview_item div:hover {
+	background-color: rgb(38, 172, 212);
+}
+
+.homepage_item_preview_item p {
+	font-family: howto;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+}
+
+#order_main_container {
+	height: fit-content;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#order_items {
+	margin: 10px;
+	border: 1px solid black;
+	width: calc(90% * 2/ 3);
+	overflow-y: scroll;
+	height: 650px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: white;
+	background-color: rgb(155, 232, 255);
+}
+
+.order_item {
+	border: 1px solid black;
+	background-color: rgb(132, 226, 255);
+	background-color: rgb(226, 144, 77);
+	margin: 10px;
+	width: 200px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.order_item:hover {
+	background-color: rgb(241, 160, 93);
+}
+
+.order_item img {
+	display: block;
+	margin: 0 auto;
+	height: 200px;
+}
+
+#order_order {
+	margin: 10px;
+	border: 1px solid black;
+	width: calc(90% / 3);
+	height: 650px;
+	background-color: rgb(155, 232, 255);
+}
+
+
+#order_order ol li {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+#order_order ol li i{
+	
+	cursor: pointer;
+	margin: 0 5px;
+}
+
+#order_order ol li p{
+	width: calc(100%);
+	text-align: center;
+	margin: 8px 0;
+}
+
+#order_specs {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	border-bottom: 1px solid black;
+}
+
+#order_specs h3 {
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+}
+
+#order_order_resume {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 10px;
+	border: 1px solid black;
+	width: calc(90% * 2/ 3);
+	margin-left: 4.3%;
+	height: fit-content;
+	margin-bottom: 10px;
+	background-color: rgb(155, 232, 255);
+	text-align: center;
+	padding-top: 30px;
+}
+
+#order_order_resume form input {
+	width: 80%;
+	height: 50px;
+	display: block;
+	margin: 0 auto;
+}
+
+#order_order_resume form button[type=submit] 
+{
+	display: block;
+	width: 100px;
+	height: 40px;
+	background-color: rgb(226, 144, 77);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer {
+	border-top: 4px rgb(161, 95, 41) solid;
+	width: 100%;
+	height: 200px;
+	background-image: url("assets/blue-cloudy-sky-texture-background-vector.jpg");
+	background-attachment: fixed;
+	background-position-y: top;
+}
+
+@media all and (max-width: 1024px)
+{
+
+#homepage_main_container {
+	flex-wrap: wrap;
+}
+
+.homepage_item_preview_item {
+	width: calc(100% / 3);
+}
+
+#title_logo img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	transform: rotate(0deg);
+	height: 80px;
+}
+
+#title_logo h1 {
+	display: block;
+	font-size: 10vw;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -5px;
+}
+
+#homepage_favorites {
+	background-size: cover;
+}
+
+#homepage_newarrivals {
+	background-size: cover;
+}
+
+nav {
+	height: fit-content;
+}
+
+nav a {
+	width: calc(100% / 2.5);
+	height: 35px;
+	text-align: center;
+}
+
+.homepage_showcase {
+	width: 95%;
+	margin: 10px 0;
+}
+
+#order_items {
+	width: calc(95%);
+}
+
+#order_order {
+	width: calc(95%);
+}
+
+#order_order_resume {
+	width: calc(95%);
+}
+
+}

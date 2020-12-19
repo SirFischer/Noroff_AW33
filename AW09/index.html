@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/181c94503b.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="general.css">
+    <title>Order | Red Pepper Pizza</title>
+</head>
+<body>
+    <header id="header">
+        <nav id="header__nav">
+            <ul>
+                <li><a href="#"><div><i class="fas fa-home"></i></div></a></li>
+                <li id="header__nav__active"><a href="#"><div>Order</div></a></li>
+                <li><a href="#"><div>Menu</div></a></li>
+				<li><a href="#"><div>Contact us!</div></a></li>
+				<li id="basket__nav"><i class="fas fa-shopping-basket fa-2x"></i></li>
+			</ul>
+			
+        </nav>
+	</header>
+	<section id="basket_expanded">
+				<div id="order">
+					<div id="order__block_1">
+						<h3>Enter your informations:</h3>
+						<form id="order__form" action="#" method="get">
+							<span class="order_input_field">
+								<label for="order_name">Name: </label>
+								<input id="order_name" name="name" type="text" required>
+							</span>
+							<span class="order_input_field">
+								<label for="order_tel_number">Phone: </label>
+								<input id="order_tel_number" name="phone" type="text" required>
+							</span>
+							<span class="order_input_field">
+								<label for="order_name">Address: </label>
+								<input id="order_adresse" name="adresse" type="text" required>
+							</span>
+							<input id="order_list_input_value" type="hidden" name="orders">
+						</form>
+						<div id="order__submit" onclick="submit_order_form()"><h3>Check Out!</h3></div>
+					</div>
+					<div onclick="delete_elements(this)" id="order__block_2">
+						<div id="shopping_cart">
+							<h3>Shopping cart:</h3>
+							<ol>
+			
+							</ol>
+							<p>Sum: </p>
+						</div>
+					</div>
+				</div>
+			</section>
+    <div id="pizza__order">
+        <div class="order_item" ><input type="hidden" value="12.99"><div class="order_item_img"><img src="assets/FR_PCAN_fr_menu_7992.webp" alt="pizza 1"><div class="img_overlay_order_item add_to_cart_btn">Add to cart!</div></div><h3>Pizza 1</h3><p>12.99$</p></div>
+        <div class="order_item" ><input type="hidden" value="15.69"><div class="order_item_img"><img src="assets/FR_PCHP_fr_menu_7992.webp" alt="pizza 1"><div class="img_overlay_order_item add_to_cart_btn">Add to cart!</div></div><h3>Pizza 2</h3><p>15.99$</p></div>
+        <div class="order_item" ><input type="hidden" value="12.99"><div class="order_item_img"><img src="assets/FR_PSME_fr_menu_7992.webp" alt="pizza 1"><div class="img_overlay_order_item add_to_cart_btn">Add to cart!</div></div><h3>Pizza 3</h3><p>12.99$</p></div>
+        <div class="order_item" ><input type="hidden" value="10.59"><div class="order_item_img"><img src="assets/FR_PCMI_fr_menu_8003.webp" alt="pizza 1"><div class="img_overlay_order_item add_to_cart_btn">Add to cart!</div></div><h3>Pizza 4</h3><p>10.59$</p></div>
+        <div class="order_item" ><input type="hidden" value="12.99"><div class="order_item_img"><img src="assets/FR_PBCG_fr_menu_7992.webp" alt="pizza 1"><div class="img_overlay_order_item add_to_cart_btn">Add to cart!</div></div><h3>Pizza 5</h3><p>12.99$</p></div>
+        <div class="order_item" ><input type="hidden" value="9.99"><div class="order_item_img"><img src="assets/FR_PSVY_fr_menu_7992.webp" alt="pizza 1"><div class="img_overlay_order_item add_to_cart_btn">Add to cart!</div></div><h3>Pizza 6</h3><p>9.99$</p></div>
+        <div class="order_item" ><input type="hidden" value="12.00"><div class="order_item_img"><img src="assets/FR_PDIP_fr_menu_7992.webp" alt="pizza 1"><div class="img_overlay_order_item add_to_cart_btn">Add to cart!</div></div><h3>Pizza 7</h3><p>12.00$</p></div>
+		<div class="order_item" ><input type="hidden" value="12.19"><div class="order_item_img"><img src="assets/FR_PEXT_fr_menu_7992.webp" alt="pizza 1"><div class="img_overlay_order_item add_to_cart_btn">Add to cart!</div></div><h3>Pizza 8</h3><p>12.19$</p></div>
+		<div class="order_item" ><input type="hidden" value="12.00"><div class="order_item_img"><img src="assets/FR_PORI_fr_menu_7992.webp" alt="pizza 1"><div class="img_overlay_order_item add_to_cart_btn">Add to cart!</div></div><h3>Pizza 7</h3><p>12.00$</p></div>
+		<div class="order_item" ><input type="hidden" value="12.19"><div class="order_item_img"><img src="assets/FR_PVMA_fr_menu_7992.jpg" alt="pizza 1"><div class="img_overlay_order_item add_to_cart_btn">Add to cart!</div></div><h3>Pizza 8</h3><p>12.19$</p></div>
+	</div>
+	<div id="pizza__order">
+		<div class="order_item" ><input type="hidden" value="12.99"><div class="order_item_img"><img src="assets/download (2).jpeg" alt="Drink 1"><div class="img_overlay_order_item add_to_cart_btn">Add to cart!</div></div><h3>Pepsi 1</h3><p>12.99$</p></div>
+        <div class="order_item" ><input type="hidden" value="15.69"><div class="order_item_img"><img src="assets/download (3).jpeg" alt="Drink 1"><div class="img_overlay_order_item add_to_cart_btn">Add to cart!</div></div><h3>Cola 2</h3><p>15.99$</p></div>
+        <div class="order_item" ><input type="hidden" value="12.99"><div class="order_item_img"><img src="assets/download.jpeg" alt="Drink 1"><div class="img_overlay_order_item add_to_cart_btn">Add to cart!</div></div><h3>Cyanide 3</h3><p>12.99$</p></div>
+        <div class="order_item" ><input type="hidden" value="10.59"><div class="order_item_img"><img src="assets/download.png" alt="Drink 1"><div class="img_overlay_order_item add_to_cart_btn">Add to cart!</div></div><h3>Sprite 4</h3><p>10.59$</p></div>
+	</div>
+    
+    
+    <footer id="footer">
+
+    </footer>
+</body>
+</html>
+
+<script src="script.js"></script>
