@@ -23,6 +23,7 @@ body {
 	padding: 0;
 	background-color: rgb(224, 219, 219);
 	color: white;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
@@ -36,8 +37,7 @@ header .header_img {
 	width: 100%;
 	background-image: url(../../assets/img/silhouette-683751_1920.jpg);
 	background-size: cover;
-	background-position-y: 280%;
-	background-attachment: fixed;
+	background-position-y: 85%;
 	outline: 3px solid black;
 }
 
@@ -243,7 +243,7 @@ main h1 {
 
 #main_home {
 	width: 90%;
-	margin: 0 auto;
+	margin: 50px auto;
 }
 
 #main_home div div {
@@ -263,7 +263,8 @@ main h1 {
 
 #main_home div p {
 	margin: 5px;
-	width: 50%;
+	margin-top: 20px;
+	width: 60%;
 }
 
 #main_home div {
@@ -404,4 +405,25 @@ and (min-width : 1024px) {
 	header nav button {
 		display: none;
 	}
+	
 }
+
+@media screen and (max-width: 1024px) {
+	#main_home div {
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	#main_home div div {
+		width: 100%;
+	}
+
+	#main_home div p {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+
+	#main_home_row_two {
+		flex-direction: column-reverse;
+	}
+	}

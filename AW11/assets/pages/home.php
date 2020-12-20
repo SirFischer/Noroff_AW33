@@ -6,7 +6,7 @@
 </style>
 <meta name="description" content="Welcome to the first guided cycling website with an exclusive focus on eco-friendly tours around Paris.">
 <main>
-	<h1>HOME</h1>
+	<h1>Home</h1>
 	<section id="main_home">
 		<div>
 			<div>
@@ -16,7 +16,7 @@
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos optio ex dolores amet. Repellat veritatis, voluptatibus a error placeat delectus exercitationem non eos, molestiae fugiat omnis dignissimos consectetur sint similique.
 			</p>
 		</div>
-		<div>
+		<div id="main_home_row_two">
 			<p>
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos optio ex dolores amet. Repellat veritatis, voluptatibus a error placeat delectus exercitationem non eos, molestiae fugiat omnis dignissimos consectetur sint similique.
 			</p>

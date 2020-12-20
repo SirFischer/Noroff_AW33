@@ -12,6 +12,7 @@
 		<input type="mail" name="mail" id="contact_mail" placeholder="E-mail" required/>
 		<input type="tel" name="name" id="contact_phone" placeholder="Phone" required/>
 		<textarea name="content" id="contact_content" cols="30" rows="10" placeholder="What would you like to tell us?" required></textarea>
-		<input class="btn btn-primary" type="submit" value="submit">
+		<input class="btn btn-primary" id="form_submit_contact" type="button" value="submit">
 	</form>
 </main>
+<script src="assets/controllers/contact/script.js"></script>
